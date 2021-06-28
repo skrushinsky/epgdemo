@@ -1,6 +1,6 @@
 # EPG demo
 
-Демонстрация веб-сервиса по обработке фрагментов ТВ-расписаний. 
+Демонстрация веб-сервиса по обработке фрагментов ТВ-расписаний. Фрагменты добываются из разных источников "веб-пауками".
 
 - [EPG demo](#epg-demo)
   - [Платформа](#платформа)
@@ -101,7 +101,7 @@ $ source ./venv/bin/activate
 
 ```console
 (venv) $ curl --request POST \
-              --url http://localhost:5555/fragments \
+              --url http://localhost:5000/service/hook \
               --header 'Content-Type: application/json' \
               --data EVENT'
 ```
